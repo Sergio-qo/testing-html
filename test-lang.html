@@ -1,5 +1,6 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    var language; 
+     var language; 
     function getLanguage() {
     (localStorage.getItem('language') == null) ? setLanguage('en') : false;
     $.ajax({ 
@@ -11,9 +12,6 @@
     function setLanguage(lang) {
         localStorage.setItem('language', lang);
     }
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
     $(document).ready(function(){
     $('#div1').text(language.date);
     });
